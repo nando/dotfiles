@@ -2,7 +2,7 @@ set nocompatible
 syntax on
 filetype plugin indent on
 set encoding=utf-8
-set mouse=a
+"set mouse=a
 set ruler
 " set number
 set smartindent
