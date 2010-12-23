@@ -11,6 +11,7 @@ set bs=2  " Backspace over everything in insert mode
 set shiftwidth=2  " Tabs under smart indent
 set expandtab
 set paste
+set ruler
 
 let g:browser = 'firefox -new-tab '
 "let g:browser = 'konqueror '
