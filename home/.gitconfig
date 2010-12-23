@@ -1,0 +1,42 @@
+[user]
+  email = fernando.garcia@the-cocktail.com
+  name = Fernando García Samblas
+[alias]
+  co = checkout
+  st = status
+  di = diff
+  pl = pull
+  ps = push
+  br = branch
+  ci = commit
+  up = !git stash && git pull --rebase && git push origin `git name-rev --name-only HEAD` && git stash pop
+  shopup = !git add vendor/shopitrino && git ci -m 'xx Versión shopitrino'
+  neutup = !git add vendor/neutrino && git ci -m 'xx Versión neutrino'
+[giggle]
+  compact-mode = false
+  main-window-geometry = 1243x949+37+25
+[gui]
+  fontui = -family helvetica -size 15 -weight bold -slant roman -underline 0 -overstrike 0
+  fontdiff = -family Courier -size 15 -weight normal -slant roman -underline 0 -overstrike 0
+  matchtrackingbranch = true
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[color "diff"]
+  new = cyan
+  old = magenta
+  frag = yellow
+  meta = green
+  commit = normal
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+
+[push]
+	default = matching
