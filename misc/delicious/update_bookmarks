@@ -1,0 +1,2 @@
+#! /bin/sh
+curl https://fernando.garcia:xxx@api.del.icio.us/v1/posts/all > bookmarks.xml
