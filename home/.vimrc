@@ -12,6 +12,7 @@ set shiftwidth=2  " Tabs under smart indent
 set expandtab
 set paste
 set ruler
+set autoindent
 
 let g:browser = 'firefox -new-tab '
 "let g:browser = 'konqueror '
