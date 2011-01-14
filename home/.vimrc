@@ -20,7 +20,9 @@ if &statusline == ''
 end
 set laststatus=2
 
-
+" Store temporary files in a central spot
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 let g:browser = 'firefox -new-tab '
 "let g:browser = 'konqueror '
