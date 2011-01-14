@@ -12,6 +12,16 @@ set shiftwidth=2  " Tabs under smart indent
 set expandtab
 set ruler
 
+" A really status line
+"set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+if &statusline == ''
+  "set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+  set statusline=[%n]\ %<%.99f\ %h%w%m%r%y%=%-16(\ %l,%c-%v\ %)%P
+end
+set laststatus=2
+
+
+
 let g:browser = 'firefox -new-tab '
 "let g:browser = 'konqueror '
 " Open the Ruby ApiDock page for the word under cursor, in a new Firefox tab
